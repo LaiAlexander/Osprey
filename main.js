@@ -1,5 +1,5 @@
 /**
-* The Creation Game (working title)
+* Project Osprey (working title)
 * Copyright (c) 2014 Lai Alexander Holmsen
 *
 * Thanks for playing!
