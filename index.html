@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Game of Creation and Stoffling</title>
+    <link rel="stylesheet" type="text/css" href="interface.css" />
+    <script type="text/javascript" src="protonic.js"></script>
+  </head>
+
+  <body>
+
+    <h1>The Creation Game</h1>
+
+    <button class="buttons" onClick="resetSave()">Reset game</button>
+    <button class="buttons" onClick="save()">Save game</button> <br> <br> <!-- Do not use <br> to increase the gap between lines of text; use the CSS margin property or the <p> element. -->
+
+    <!-- ELECTRONS -->
+    Total electrons: <span id="numberOfElectrons">0</span> <br>
+
+    Gather electrons: <button class="buttons" onClick="makeElectron(1)">Electrons</button> <br><br>
+
+
+    <!-- PROTONS -->
+    Total protons: <span id="numberOfProtons">0</span> <br>
+
+    Gather protons: <button class="buttons" onClick="makeProton(1)">Protons</button> <br><br>
+
+    <!-- NEUTRONS -->
+    Total neutrons: <span id="numberOfNeutrons">0</span> <br>
+
+    Gather neutrons: <button class="buttons" onClick="makeNeutron(1)">Neutrons</button> <br><br>
+
+
+    <!-- HYDROGEN -->
+    Total hydrogen: <span id="numberOfHydrogens">0</span> <br>
+
+    Cost: 1 proton, 1 electron<!--, 1/2/3 neutrons --> <br>
+
+    Make hydrogen: <button class="buttons" class="buttons" onClick="makeHydrogen(1)">Hydrogen</button> <br> <br>
+
+    <!-- The "tab-buttons" class and the ids feels like they are just cluttering things up-->
+    <button class="buttons tab-buttons active-button" id="machines-tab" onClick="selectTab('machines')">Machines</button>
+    <button class="buttons tab-buttons" id="upgrades-tab" onClick="selectTab('upgrades')">Upgrades</button>
+    <button class="buttons tab-buttons" id="stats-tab" onClick="selectTab('stats')">Stats</button>
+    <ul>
+     	<li id="machines" class="tabs">
+        <!-- ELECTRON MAKERS -->
+        Electron makers (produces <span id="efficiencyOfElectronMakers">1</span> electron(s) per second): <span id="numberOfElectronMakers">0</span> <br>
+
+        Cost: <span id="costOfElectronMaker">10</span> electrons <br>
+
+        Upgrades (max upgrades are 10): <span id="numberOfElectronMakerUpgrades">0</span> <br>
+
+        Buy electron maker: <button class="buttons" onClick="buyElectronMaker(1)">Buy</button> <br> <br>
+
+
+        <!-- PROTON MAKERS -->
+        Proton makers (produces <span id="efficiencyOfProtonMakers">1</span> proton(s) per second): <span id="numberOfProtonMakers">0</span> <br>
+
+        Cost: <span id="costOfProtonMaker">10</span> protons <br>
+
+        Upgrades (max upgrades are 10): <span id="numberOfProtonMakerUpgrades">0</span> <br>
+
+        Buy proton maker: <button class="buttons" onClick="buyProtonMaker(1)">Buy</button> <br><br>
+
+
+        <!-- REACTORS -->
+        Reactors: (makes <span id="efficiencyOfReactors">1</span> hydrogen(s) from protons and electrons) <span id="numberOfReactors">0</span> <br>
+
+        Cost: <span id="costOfReactor">10</span> hydrogen <br>
+
+        Upgrades (max upgrades are 10): <span id="numberOfReactorUpgrades">0</span> <br>
+
+        Buy reactor: <button class="buttons" onClick="buyReactor(1)">Buy</button> <br><br>
+      </li>
+
+      <li id="upgrades" class="tabs">
+        <!-- UPGRADES -->
+        Electron maker (doubles efficiency, cost: <span id="costToUpgradeElectronMaker">100</span> electrons): <button class="buttons" onClick="upgradeElectronMaker()">Upgrade</button> <br>
+
+        Proton maker (doubles efficiency, cost: <span id="costToUpgradeProtonMaker">100</span> protons): <button class="buttons" onClick="upgradeProtonMaker()">Upgrade</button> <br>
+
+        Reactor (doubles efficiency, cost: <span id="costToUpgradeReactor">500</span> hydrogen): <button class="buttons" onClick="upgradeReactor()">Upgrade</button> <br>
+        <button class="upgrd" onClick="_4x89777('22')"></button>
+      </li>
+
+      <li id="stats" class="tabs">
+        Stats are coming
+      </li>
+    </ul>
+
+    <h1>OIOIOIOIIOIOIOIOIOIOIOI!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+    <img src="http://channel.nationalgeographic.com/exposure/content/photo/photo/1380293_stoffel-dont-give-a_3helvsuegikueqieijvysdazhtncurxrbvj6lwuht2ya6mzmafma_610x343.jpg" /> <br>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

@@ -1,1 +1,1 @@
-Initial README, will be updated
+This is a personal project to learn javascript. It is an incremental browser game, inspired by CookieClicker and several other incremental games.
